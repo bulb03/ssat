@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ServiceMenu.Master.cs" Inherits="work.regional.ServiceMenu" MasterPageFile="TitleTopMenuWithFooter.Master" %>
+
+<asp:Content ID="ApplicationContent" ContentPlaceHolderID="TitleTopMenuContentPlaceHolder" runat="server">
+    <div class="wrapper-login">
+        <div class="container">
+            <div class="regionbox">
+            	<div class="coachlivebox">
+               		<a href="../Logout.aspx"><input type="submit" name="" value="登出" id="" class="btn region-btn"/></a>
+                    <hr></hr>
+              	</div>
+            	<div class="row">
+                    <div class="reg-leftcont">
+                        <div class="icon-box-1">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="coach_meetinglist.php">會議召開</a></p>
+                            </div>
+                        </div>
+                        <div class="icon-box-1">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="coach_visit_reclist.php">訪視指導紀錄</a></p>
+                            </div>
+                        </div>
+                        <div class="icon-box-1">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="news_coach.php">最新消息發布</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-rightcont">
+                        <div class="icon-box-1 icon-right">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="coach_edulecturelist.php">教育講座辦理</a></p>
+                            </div>
+                        </div>
+                        <div class="icon-box-1 icon-right">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="coach_schlist.php">輔導學校資料</a></p>
+                            </div>
+                        </div>
+                        <div class="icon-box-1 icon-right">
+                            <i class="i-settings"></i>
+                            <div class="icon-box-content">
+                                <p><a href="coach_basicdata.php">基本資料修改</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ServiceMenuContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>

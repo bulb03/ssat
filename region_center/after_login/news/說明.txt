@@ -1,0 +1,3 @@
+news_coach_revise.aspx只是個寫死的檔案
+
+修改和刪除無法使用

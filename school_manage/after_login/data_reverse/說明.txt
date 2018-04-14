@@ -1,0 +1,3 @@
+處理的函數在ChangeUserInfo.aspx.cs裏；
+
+還要多處理寄認證信件到信箱的php寫法

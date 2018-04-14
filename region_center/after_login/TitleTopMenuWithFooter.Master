@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TitleTopMenuWithFooter.master.cs" Inherits="work.regional.TitleTopMenuWithFooter" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="LoadFoO" />
+    <meta name="description" content="Site description" />
+    <meta name="keywords" content="體育署, 體育署防護員" />
+    <title>體育署防護員申請表單系統</title>
+    <link href="../assets/css/protector.css" rel="stylesheet">
+    <link href="../assets/css/formapp.css" rel="stylesheet">
+    <script src="../js/lib/jquery-3.2.1.min.js"></script>
+    <script src="../js/lib/ajax.js"></script>
+    <script src="../js/regional/regional.js"></script>
+</head>
+
+<body>
+    <header id="header" class="alt">
+        <div id="Topitem">
+            <h1><a href="#">區域輔導中心系統</a></h1>
+            <h2><a href="/">回首頁</a></h2>
+            <div class="container">                
+                <nav id="nav">
+                	<ul class="menu">
+                        <li class="menu-item current"><a href="../about.aspx">關於本計畫</a></li>
+                        <li class="menu-item current"><a href="../../php/messagelist.php">最新消息</a></li>
+                        <li class="menu-item second"><a href="javascript:;">計畫申請與管理</a>
+                            
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="../default.aspx">學校申請與管理</a></li>
+                        		<li class="submenu-item"><a href="../country/countrylogin.aspx">縣市管理</a></li>
+                        		<li class="submenu-item"><a href="regionalLogin.aspx">區域輔導中心</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="menu-item second"><a>運動防護紀錄系統</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="../trainer/register.aspx">運動防護員帳號啟動</a></li>
+                                <li class="submenu-item"><a>運動防護紀錄系統</a></li>
+                            </ul>
+                        </li>
+                        <!--<li class="menu-item"><a href="../Info_sharing.aspx">資源分享</a></li>-->
+                        <li class="menu-item"><a href="#">資源分享</a></li>
+                    </ul>
+                </nav>
+        	</div>
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="TitleTopMenuContentPlaceHolder" runat="server">
+
+    </asp:ContentPlaceHolder>
+     <footer>
+        <div class="f-content">
+            <p>教育部體育署</p>
+            <div class="f-middle">
+                  
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

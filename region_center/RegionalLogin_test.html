@@ -1,0 +1,104 @@
+<html class="gr__ssats_com_tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="LoadFoO">
+    <meta name="description" content="Site description">
+    <meta name="keywords" content="體育署, 體育署防護員">
+    <title>體育署防護員申請表單系統</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link href="../../assets/css/protector.css" rel="stylesheet">
+    <link href="../../assets/css/formapp.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--匯入jQuery-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="../js/lib/jquery-3.2.1.min.js"></script>
+    <script src="../js/lib/ajax.js"></script>
+    <script src="../js/regional/regional.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    
+    <script>
+    function reloadValidCode() {
+        document.getElementById('Image1').src = '../ValidateCode.ashx?' + new Date().getTime();
+    }
+    </script>
+    <div class="wrapper-login">
+        <div class="container">
+            
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="school">
+                    <div class="campus-wrap">
+                <div class="row">
+                    <div class="campus-title">
+                        <header>
+                            <h1>學校申請與管理</h1>
+                        </header>
+                    </div>
+                    <div class="campusbox-form">
+                        <h2>請輸入帳號密碼</h2>
+                        <div class="offset-2">
+                            <div class="well">
+                                <form method="post" action="./default.aspx" id="form1" class="form-horizontal">
+                                    <div class="aspNetHidden">
+                                        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tfbOc48esw4vgr2L/0zWyyGuoAQbE7njZzytFlutK6pAWR3jqdM2ytv8ZVZDP/LD34Wr7bRU3gqJ7L9c0sqQyZAgdMP+37o6eE84YFMc6xU=">
+                                    </div>
+                                    <div class="aspNetHidden">
+                                        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="932B7FE7">
+                                        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="+khgGrzRVe3oNRRqgjCcr6eH/L8hEVcTm5zITPNl1cTDJIbiksteEg+bhA/hcrlmv0oll98OQta62dTf/33QI0SgW2B7z60fJMAyLHV1uHyEDnFFlwuvVxHlMkXo9lyDLzbvjj52K/+FzfT8X8JzyldExCJ3yIeqRVRhvgttuBhD1zklrMm/MgN7MXmt4GMBsp63MyZdTH5V3SxfVnYvqTVsDVbSXtGsqnU6JUC6srM=">
+                                    </div>
+                                    <div class="label"><span style="font-size:X-Large;">請輸入帳號：</span></div>
+                                    <input name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$account" type="text" id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_account" class="form-control">
+                                    <div class="label"><span style="font-size:X-Large;">請輸入密碼：</span></div>
+                                    <input name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$password" type="password" id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_password" class="form-control">
+                                    <label class="label">
+                                        <div class="label">
+                                            <div class="float-left form-inblock pa-top10">
+                                                <span style="font-size:X-Large;">請輸入右方驗證碼：</span>
+                                            </div>
+                                            <input name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$code" type="text" id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_code" class="form-control" style="width:68px;">
+                                        </div> <img id="Image1" src="ValidateCode.ashx">
+                                    </label>
+                                    <div class="offset-form">
+                                        <div class="float-left form-inblock">
+                                            <input type="submit" name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$login" value="  登入  " id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_login" class="btn btn-lg campus-btn">
+                                            <input type="submit" name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$registered" value="  註冊  " id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_registered" class="btn btn-lg campus-btn">
+                                            <input type="submit" name="ctl00$ctl00$MainContentPlaceHolder$TitleTopMenuContentPlaceHolder$forget" value="  忘記密碼  " id="MainContentPlaceHolder_TitleTopMenuContentPlaceHolder_forget" class="btn btn-lg campus-btn">
+                                            <script>
+                                            function reloadValidCode() {
+                                                document.getElementById('Image1').src = 'ValidateCode.ashx?' + new Date().getTime();
+                                            }
+                                            </script>
+                                            <input type="button" id="reflash" value="重整驗證碼" onclick="reloadValidCode()" class="btn btn-lg campus-btn">
+                                        </div>
+                                    </div>
+                                </form>
+                                <span id="hint"></span>
+                            </div>
+                            <div class="campustxt">
+                                <span id="Label1">
+                                歡迎使用本申請系統，用於補助各級學校約用運動防護員巡迴服務計畫， <br>
+                                請先登入後依序填寫表單，如沒有帳號請點選註冊！
+                
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end content-form-->
+                </div>
+                <!--end row-->
+            </div>
+                    <!--end content-form-->
+                </div>
+                
+            </div>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

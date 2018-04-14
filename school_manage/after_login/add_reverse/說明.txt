@@ -1,0 +1,1 @@
+查詢及確認都在campus_add.aspx.cs裏
